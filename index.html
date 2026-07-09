@@ -1,102 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Yiming Bao">
     <meta property="og:title" content="Yiming Bao">
-	<meta property="og:description" content="Undergraduate, Tsinghua University DCST">
+    <meta property="og:description" content="Undergraduate, Tsinghua University DCST">
     <meta property="og:image" content="https://chillinfree.github.io/files/me.png">
-	<meta property="og:url" content="https://chillinfree.github.io/">
-	<meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://chillinfree.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Yiming Bao</title>
     <link rel="apple-touch-icon" href="files/logo.png">
     <link rel="icon" type="image/png" href="files/logo.png">
     <link rel="manifest" href="files/site.webmanifest">
     <link rel="stylesheet" href="style.css">
+    <script>
+        (function () {
+            var stored = localStorage.getItem("theme");
+            var theme = stored || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
 </head>
+
 <body>
-<div class="header noselect">
-    <div class="header-div content row">
-        <div class="header-profile-picture"></div>
-        <div class="header-text">
-            <div class="header-name">
-                <h1>Yiming Bao | 包一鸣</h1>
-            </div>
-            <div class="header-subtitle">
-                Undergraduate, Tsinghua University DCST
-            </div>
-            <div class="header-links">
-                <a class="btn" href="#contact">Email</a> /
-                <a class="btn" href="https://scholar.google.com/citations?user=9mHsNVsAAAAJ">Google Scholar</a> / 
-                <a class="btn" href="https://x.com/AlvinBao85746">X</a> /
-                <a class="btn" href="https://github.com/chillinFree">GitHub</a> /
-                <a class="btn" href="https://chillinfree.github.io/files/xiaohongshu.jpg">Rednote</a> /
-                <a class="btn" href="https://chillinfree.github.io/files/wechat.jpg">WeChat</a> / 
-                <a class="btn" href="https://chillinfree.github.io/files/CV.pdf">CV</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="content" style="padding-bottom: 64px;">
-    <div>
-        <p>
-            I am an Undergraduate at <a href="https://www.cs.tsinghua.edu.cn/csen">DCST, Tsinghua University</a>. I am currently working at Tsinghua Embodied AI Lab (TEA Lab) affiliated to <a href="https://iiis.tsinghua.edu.cn/">Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University</a> under the supervision of <a href="https://hxu.rocks/">Prof. Huazhe Xu</a>.
-        </p>
-    </div>  
-    <div>
-        <h2 class="noselect">Hobbies</h2>
-        <p>
-            I'm really passionate about fitness. In my spare time, I enjoy going to the gym 🏋️‍♂️, playing golf ⛳️ and basketball 🏀, playing tennis 🎾, hiking 🥾⛰️, taking long walks 🚶‍♂️, and traveling ✈️🌍.
-            <br/>
-            Besides, I also love reading novels 📚, listening to piano music, Chinese folk songs, and rock. 🎵.
-        </p>
-    </div>
-    <div>
-        <h2 class="noselect">Research Goal</h2>
-        <p>
-            My long-term research goal is to develop robots with human-level versatility in perception and reasoning, ultimately enhancing everyday life at scale. 
-            <br/>
-            My current focus lies at the intersection of robotics and machine learning, particularly in building general-purpose manipulation systems that can robustly operate in unstructured real-world environments.        </p>
-    </div>  
-    <div>
-        <h2 class="noselect">Publications and preprints</h2>
-        <p>Papers sorted by recency. Representative papers are <span style="background-color: #fff8df">highlighted</span>.</p>
-        
-        <div class="highlight publication row clearfix">
-            <div class="row-media" style="background-image: url(files/deximit.gif);"></div>
-            <div class="row-text">
-                <a class="publication-title bold" href="https://mujc2021.github.io/deximit/">DexImit: Learning Bimanual Dexterous Manipulation from Monocular Human Videos</a><br/>
-                Juncheng Mu<sup>*</sup>, Sizhe Yang<sup>*</sup>, <b><u>Yiming Bao</u></b>, Hojin Bae, Tianming Wei, Linning Xu, Boyi Li<sup>&dagger;</sup>, Huazhe Xu<sup>&dagger;</sup>, Jiangmiao Pang<sup>&dagger;</sup><br/>
-                <span class="bold">IN SUBMISSION</span><br/>
-                <span class="italic">Robotics: Science and Systems (<a href="https://roboticsconference.org/">RSS</a>) 2026<br/>
-                <a class="btn btn-orange" href="https://mujc2021.github.io/deximit/">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2602.10105">arxiv</a> / <a class="btn btn-dark" href="bibtex/mu2026deximit.txt">bibtex</a>
-            </div>
-        </div>
-        <div class="publication row clearfix">
-            <div class="row-media" style="background-image: url(files/unidex.png);"></div>
-            <div class="row-text">
-                <a class="publication-title bold" href="https://unidex-ai.github.io/">UniDex: A Robot Foundation Suite for Universal Dexterous Hand Control from Egocentric Human Videos</a><br/>
-                Gu Zhang<sup>*</sup>, Qicheng Xu<sup>*</sup>, [...],
-  <b><u>Yiming Bao</u></b><sup>*</sup>, [...],
-  Yang Gao<sup>&dagger;</sup>, Hao Zhao<sup>&dagger;</sup>, Hang Zhao<sup>&dagger;</sup>,
-  Huazhe Xu<sup>&dagger;</sup> (19 authors)<br/>
-                <span class="italic">Conference on Computer Vision and Pattern Recognition (<a href="https://cvpr.thecvf.com/">CVPR</a></span>) 2026 <br/>
-                <a class="btn btn-blue" href="https://unidex-ai.github.io/">project page</a> / <a class="btn btn-orange" href="https://arxiv.org/abs/2603.22264">arxiv</a> / <a class="btn btn-green" href="https://github.com/unidex-ai/UniDex">code</a>
+    <div class="header noselect">
+        <div class="header-div content row">
+            <div class="header-profile-picture"></div>
+            <div class="header-text">
+                <div class="header-name">
+                    <h1>Yiming Bao | 包一鸣</h1>
+                    <button class="theme-toggle noselect" id="theme-toggle" type="button"
+                        aria-label="Toggle light and dark mode" title="Toggle light/dark mode">
+                        <span class="icon-moon">🌙</span><span class="icon-sun">☀️</span>
+                    </button>
+                </div>
+                <div class="header-subtitle">
+                    Undergraduate, Tsinghua University DCST
+                </div>
+                <div class="header-links">
+                    <a class="btn" href="#contact">Email</a> /
+                    <a class="btn" href="https://scholar.google.com/citations?user=9mHsNVsAAAAJ">Google Scholar</a> /
+                    <a class="btn" href="https://x.com/AlvinBao85746">X</a> /
+                    <a class="btn" href="https://github.com/chillinFree">GitHub</a> /
+                    <a class="btn" href="https://chillinfree.github.io/files/xiaohongshu.jpg">Rednote</a> /
+                    <a class="btn" href="https://chillinfree.github.io/files/wechat.jpg">WeChat</a> /
+                    <a class="btn" href="https://chillinfree.github.io/files/CV.pdf">CV</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="noselect">
-        
-        <a id="contact"></a>
-        <h2>Contact</h2>
-        You are welcome to contact me regarding my research and other interesting stuff! My email is <a href="mailto:bao-ym23@mails.tsinghua.edu.cn">bao-ym23@mails.tsinghua.edu.cn</a>
+    <div class="content" style="padding-bottom: 64px;">
+        <div>
+            <p>
+                Ciao! I am an Undergraduate at <a href="https://www.cs.tsinghua.edu.cn/csen">DCST, Tsinghua
+                    University</a>. I
+                am currently working at Tsinghua Embodied AI Lab (TEA Lab) affiliated to <a
+                    href="https://iiis.tsinghua.edu.cn/">Institute for Interdisciplinary Information Sciences (IIIS),
+                    Tsinghua University</a> under the supervision of <a href="https://hxu.rocks/">Prof. Huazhe Xu</a>.
+            </p>
+        </div>
+        <div>
+            <h2 class="noselect">News</h2>
+            <div class="news">
+                <p><span class="news-date">2026.03</span> UniDex is accepted to CVPR 2026! 🎉</p>
+                <p><span class="news-date">2026.02</span> DexImit is submitted to RSS 2026.</p>
+            </div>
+        </div>
+        <div>
+            <h2 class="noselect">Hobbies</h2>
+            <p>
+                I'm really passionate about fitness. In my spare time, I enjoy going to the gym 🏋️‍♂️, playing golf ⛳️
+                and basketball 🏀, playing tennis 🎾, hiking 🥾⛰️, taking long walks 🚶‍♂️, and traveling ✈️🌍.
+                <br />
+                Besides, I also love reading novels 📚, listening to piano music, Chinese folk songs, and rock. 🎵.
+            </p>
+        </div>
+        <div>
+            <h2 class="noselect">Research Goal</h2>
+            <p>
+                My long-term research goal is to develop robots with human-level versatility in perception and
+                reasoning, ultimately enhancing everyday life at scale.
+                <br />
+                My current focus lies at the intersection of robotics and machine learning, particularly in building
+                general-purpose manipulation systems that can robustly operate in unstructured real-world environments.
+            </p>
+        </div>
+        <div>
+            <h2 class="noselect">Publications and preprints</h2>
+            <p>Papers sorted by recency. Representative papers are <span
+                    class="highlight-inline">highlighted</span>.</p>
+
+            <div class="highlight publication row clearfix">
+                <div class="row-media" style="background-image: url(files/deximit.gif);"></div>
+                <div class="row-text">
+                    <a class="publication-title bold" href="https://mujc2021.github.io/deximit/">DexImit: Learning
+                        Bimanual Dexterous Manipulation from Monocular Human Videos</a><br />
+                    Juncheng Mu<sup>*</sup>, Sizhe Yang<sup>*</sup>, <b><u>Yiming Bao</u></b>, Hojin Bae, Tianming Wei,
+                    Linning Xu, Boyi Li<sup>&dagger;</sup>, Huazhe Xu<sup>&dagger;</sup>, Jiangmiao
+                    Pang<sup>&dagger;</sup><br />
+                    <span class="bold">IN SUBMISSION</span><br />
+                    <span class="italic">Robotics: Science and Systems (<a
+                            href="https://roboticsconference.org/">RSS</a>) 2026<br />
+                        <a class="btn btn-orange" href="https://mujc2021.github.io/deximit/">project page</a> / <a
+                            class="btn btn-red" href="https://arxiv.org/abs/2602.10105">arxiv</a> / <a
+                            class="btn btn-dark" href="bibtex/mu2026deximit.txt">bibtex</a>
+                </div>
+            </div>
+            <div class="publication row clearfix">
+                <div class="row-media" style="background-image: url(files/unidex.png);"></div>
+                <div class="row-text">
+                    <a class="publication-title bold" href="https://unidex-ai.github.io/">UniDex: A Robot Foundation
+                        Suite for Universal Dexterous Hand Control from Egocentric Human Videos</a><br />
+                    Gu Zhang<sup>*</sup>, Qicheng Xu<sup>*</sup>, [...],
+                    <b><u>Yiming Bao</u></b><sup>*</sup>, [...],
+                    Yang Gao<sup>&dagger;</sup>, Hao Zhao<sup>&dagger;</sup>, Hang Zhao<sup>&dagger;</sup>,
+                    Huazhe Xu<sup>&dagger;</sup> (19 authors)<br />
+                    <span class="italic">Conference on Computer Vision and Pattern Recognition (<a
+                            href="https://cvpr.thecvf.com/">CVPR</a></span>) 2026 <br />
+                    <a class="btn btn-blue" href="https://unidex-ai.github.io/">project page</a> / <a
+                        class="btn btn-orange" href="https://arxiv.org/abs/2603.22264">arxiv</a> / <a
+                        class="btn btn-green" href="https://github.com/unidex-ai/UniDex">code</a>
+                </div>
+            </div>
+        </div>
+        <div class="noselect">
+
+            <a id="contact"></a>
+            <h2>Contact</h2>
+            You are welcome to contact me regarding my research and other interesting stuff! My email is <a
+                href="mailto:bao-ym23@mails.tsinghua.edu.cn">bao-ym23@mails.tsinghua.edu.cn</a>
+        </div>
     </div>
-</div>
-<div class="footer noselect">
-    <div class="footer-content">
-        &copy; 2025 Nicklas Hansen. You are welcome to fork it <a style="color: white; text-decoration: underline;" href="https://github.com/nicklashansen/nicklashansen.github.io">here</a>.
+    <div class="footer noselect">
+        <div class="footer-content">
+            &copy; 2026 Yiming Bao. You are welcome to fork it <a style="color: white; text-decoration: underline;"
+                href="https://github.com/nicklashansen/nicklashansen.github.io">here</a>.
+        </div>
     </div>
-</div>
+    <script>
+        (function () {
+            var toggle = document.getElementById("theme-toggle");
+            if (!toggle) return;
+            toggle.addEventListener("click", function () {
+                var current = document.documentElement.getAttribute("data-theme");
+                var next = current === "dark" ? "light" : "dark";
+                document.documentElement.setAttribute("data-theme", next);
+                localStorage.setItem("theme", next);
+            });
+        })();
+    </script>
 </body>
+
 </html>
