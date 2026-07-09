@@ -75,6 +75,11 @@ p {line-height: 1.5em;}
 
 .highlight-inline {background-color: var(--highlight-inline);}
 
+.header-links {display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 4px;}
+.header-links a.icon-link {display: inline-flex; align-items: center; justify-content: center; color: var(--link); transition: color 0.15s ease, transform 0.15s ease;}
+.header-links a.icon-link:hover, .header-links a.icon-link:focus {color: var(--link-hover); transform: translateY(-2px);}
+.header-links a.icon-link svg {width: 22px; height: 22px; display: block;}
+
 .news {max-height: 220px; overflow-y: auto; padding-right: 8px;}
 .news p {margin: 6px 0;}
 .news .news-date {display: inline-block; min-width: 88px; color: var(--stars); font-variant-numeric: tabular-nums;}
@@ -89,15 +94,18 @@ p {line-height: 1.5em;}
 }
 .theme-toggle:hover {transform: scale(1.08);}
 .theme-toggle:focus {outline: none;}
+.theme-toggle svg {display: block;}
 .theme-toggle .icon-sun {display: none;}
-.theme-toggle .icon-moon {display: inline;}
-:root[data-theme="dark"] .theme-toggle .icon-sun {display: inline;}
+.theme-toggle .icon-moon {display: block;}
+:root[data-theme="dark"] .theme-toggle .icon-sun {display: block;}
 :root[data-theme="dark"] .theme-toggle .icon-moon {display: none;}
 
 @media only screen and (max-width: 1150px) {
     .header-profile-picture, .header-text {display: block; margin: auto; text-align: center;}
     .header-profile-picture {margin-bottom: 12px; width: 140px; height: 140px;}
     .header-name {justify-content: center;}
+    .header-links {justify-content: center;}
+    .header-links a.icon-link svg {width: 26px; height: 26px;}
     body {font-size: 18px;}
     a.btn {font-size: 14px; padding: 2px 6px;}
 }
