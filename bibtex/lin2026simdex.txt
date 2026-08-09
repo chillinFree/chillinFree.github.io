@@ -1,0 +1,6 @@
+@article{lin2026simdex,
+  title={SiMDex: Mining Similar Egocentric Videos for Cross-Embodiment Dexterous Manipulation},
+  author={Lin, Nie and Ohkawa, Takehiko and Chen, Sijin and Wen, Ruoshi and Li, Zhuohang and Huang, Liqun and Zhu, Zhengming and Bao, Yiming and Li, Yunfei and Cai, Minjie and Ma, Xiao and Xu, Wei and Sato, Yoichi},
+  journal={arXiv preprint arXiv:2608.04196},
+  year={2026}
+}
