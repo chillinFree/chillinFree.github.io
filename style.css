@@ -79,6 +79,8 @@ p {line-height: 1.5em;}
 .header-links a.icon-link {display: inline-flex; align-items: center; justify-content: center; color: var(--link); transition: color 0.15s ease, transform 0.15s ease;}
 .header-links a.icon-link:hover, .header-links a.icon-link:focus {color: var(--link-hover); transform: translateY(-2px);}
 .header-links a.icon-link svg {width: 22px; height: 22px; display: block;}
+.header-links a.icon-link svg.icon-wordmark {width: 40px; height: 15px;}
+.header-links a.icon-link .icon-text {font-weight: 800; font-size: 18px; line-height: 22px; letter-spacing: 0.5px;}
 
 .research-lead {border-left: 3px solid var(--link); padding: 4px 0 4px 16px; margin: 8px 0 16px; font-size: 1.08em; color: var(--heading-2);}
 .research-tracks {display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px;}
@@ -124,6 +126,8 @@ a.track-tag:hover {color: var(--link-hover); border-color: var(--link-hover);}
     .header-name {justify-content: center;}
     .header-links {justify-content: center;}
     .header-links a.icon-link svg {width: 26px; height: 26px;}
+    .header-links a.icon-link svg.icon-wordmark {width: 47px; height: 18px;}
+    .header-links a.icon-link .icon-text {font-size: 21px; line-height: 26px;}
     body {font-size: 18px;}
     a.btn {font-size: 14px; padding: 2px 6px;}
 }
