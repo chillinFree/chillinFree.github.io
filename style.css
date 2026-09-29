@@ -60,6 +60,9 @@ p {line-height: 1.5em;}
 .bulletpoints {line-height: 1.5em;}
 .row {box-sizing: border-box;}
 .row-media {display: block; float: left; width: 160px; height: 90px; background-position: center; background-size: contain; background-repeat: no-repeat;}
+.row-media-video {position: relative; overflow: hidden; border-radius: 4px; background-color: #000;}
+.row-media-video video {display: block; width: 100%; height: 100%; object-fit: cover;}
+.row-media-tag {position: absolute; right: 4px; bottom: 4px; font-size: 10px; line-height: 1; padding: 2px 5px; border-radius: 3px; color: #fff; background-color: rgba(0, 0, 0, 0.55);}
 .row-text {display: block; float: left; margin-left: 12px; line-height: 1.5em; max-width: 598px;}
 .row-text span {line-height: inherit;}
 .clearfix {content: ""; clear: both; display: table;}
